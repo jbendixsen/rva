@@ -1,0 +1,74 @@
+@import "../colors";
+
+.custom-header {
+  background-color: transparent;
+}
+
+.spacer {
+  height: 2000px;
+}
+
+.profile-image {
+  margin: 10px;
+}
+
+.title-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 200px;
+  height: 100vh;
+}
+
+.title {
+//  background-color: #4a4c5f;
+  font-size: 48px;  
+  text-align: center;
+  color: $col_primary_light;
+}
+
+.custom-button {
+  background-color: $col_primary;
+  border-color: $col_primary_light;
+}
+
+.custom-button:hover {
+  background-color: $col_primary_dark;
+}
+
+.subtitle {
+//  background-color: #4a4c5f;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.title-actions {
+  text-align: center;
+}
+
+.services-container {
+  background-color: #ffffff;
+  padding-top: 50px;
+  height: 500px;
+  // overflow-x: scroll;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.service-container {
+  background-color: $col_primary_dark;
+  display: inline-block;
+  width: 28%;
+  white-space: normal;
+  margin: 5px;
+}
+
+.service-title {
+  color: rgb(216, 216, 216);
+
+}
+
+.service-text {
+  color: #fff;
+  padding: 20px;
+}
