@@ -1,21 +1,21 @@
-<header class="header-3 custom-header">
-  <div class="branding">
-      <!-- <a href="#" class="nav-link"> -->
-        <span class="profile-image">
-          <img src="assets/profile-3-96.png" alt="Profile">
-        </span>
-        <!-- <clr-icon shape="vm-bug"></clr-icon> -->
-        <!-- <span class="title">BC Sales Assistant</span> -->
-      <!-- </a> -->
-  </div>
-  <div class="header-actions">
-      <!-- <a href="..." class="nav-link nav-text">
-          Log Out
-      </a> -->
-  </div>
-</header>
-<div>
-  <div class="title-container">
+<div class="title-container">
+  <header class="header-3 custom-header">
+    <div class="branding">
+        <!-- <a href="#" class="nav-link"> -->
+          <span class="profile-image">
+            <img src="assets/profile-3-96.png" alt="Profile">
+          </span>
+          <!-- <clr-icon shape="vm-bug"></clr-icon> -->
+          <!-- <span class="title">BC Sales Assistant</span> -->
+        <!-- </a> -->
+    </div>
+    <div class="header-actions">
+        <!-- <a href="..." class="nav-link nav-text">
+            Log Out
+        </a> -->
+    </div>
+  </header>
+
     <h1 class="title">Dedicated Virtual Assistant</h1>
     <h2 class="subtitle">Professional Services</h2>
     <div class="title-actions">
@@ -23,7 +23,6 @@
       class="btn btn-primary custom-button"
       (click)="showRequestForm()">Request a Consultation</button>
     </div>
-  </div>
 </div>
 <div class="services-container">
   <div class="service-container">
@@ -39,21 +38,12 @@
     <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptate! Harum asperiores similique fuga dolores aut iure, earum fugiat quia corporis beatae quaerat temporibus libero exercitationem voluptatem eos hic vel.</p>
   </div>
 </div>
-<div class="spacer">
+
+<div class="additional-container">
 
 </div>
 
-<clr-modal [clrModalOpen]="requestConsultation" [clrModalClosable]="false">
-  <h3 class="modal-title">Request a consultation</h3>
+<app-footer></app-footer> 
 
-  <div class="modal-body">
+<app-request-consultation></app-request-consultation>
 
-
-  </div>
-  
-  <div class="modal-footer">
-    <button class="btn btn-outline" type="button" (click)="cancelRequestForm()">Cancel</button>
-    <button class="btn btn-primary" type="button" (click)="submitRequest()">Ok</button>
-  </div>
-
-</clr-modal>

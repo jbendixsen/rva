@@ -1,27 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+import { Store, Select } from '@ngxs/store';
+
+import { 
+  ShowRequestConsultationModal } from './shared/state';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
-  requestConsultation = false;
+  constructor(private store: Store) { }
+
+  ngOnInit() {  }
 
   showRequestForm() {
-    console.log('Show Request Form');
-    this.requestConsultation = true;
+    this.store.dispatch(new ShowRequestConsultationModal());
   }
 
-  cancelRequestForm() {
-    console.log('Cancel Request for Consultation');
-    this.requestConsultation = false;
-  }
-
-  submitRequest() {
-    console.log('Submit Request for Consultation');
-    this.requestConsultation = false;
-  }
 
 }

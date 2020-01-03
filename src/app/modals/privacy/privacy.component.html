@@ -1,0 +1,40 @@
+<clr-modal [clrModalOpen]="showPrivacyPolicy$ | async" [clrModalSize]="'lg'">
+  <h3 class="modal-title">Privacy Policy</h3>
+  <div class="modal-body">
+
+    <div class="cookies-section">
+      <p class="cookies-section-text">We really appreciate you being a client at {{ companyName }}.</p>
+      <p class="cookies-section-text">Your success is important to us and that’s why our focus is on improving our productivity and performance to provide better service to our clients.</p>
+      <p class="cookies-section-text">As part of our strategy of staying ahead of the curve with virtual technology, we changed how we protect data within {{ companyName }} and we want to make sure our clients know.</p>
+      <p class="cookies-section-text">Below is our updated Privacy Statement. We are committed to the highest standards of data security & management and all our processes and systems have been updated to include the new provisions of GDPR.</p>
+      <p class="cookies-section-text">The new practices go into effect on May 25, 2018. If you have any questions about these changes please reach out to us at lrbendixsen@gmail.com.</p>
+      <h4 class="cookies-section-title">{{ companyName }} Privacy Statement</h4>
+      <p class="cookies-section-text">We know your personal information is important to you and it is also important to {{ companyName }}. This Privacy Statement tells you what we use your personal information for and explains your rights around how we use it.</p>
+      <p class="cookies-section-text">At {{ companyName }} we value how important personal information is to our customers. We have created a Privacy Statement that details what we use your personal information for and what your rights are about how we use your personal information.</p>
+      <p class="cookies-section-text">We ask that you review our Privacy Statement to understand how and why we use your personal information.</p>
+      <p class="cookies-section-text">If you give us personal information about someone else, you must have their permission. They also should be aware of this Privacy Statement as it also applies to them.</p>
+      <h4 class="cookies-section-title">Data Controls</h4>
+      <p class="cookies-section-text">For the purposes of the applicable data protection legislation, {{ companyName }} is the data controller. You will find our contact details in the “Contact us” section below.</p>
+      <h4 class="cookies-section-title">The Information We Gather – Details:</h4>
+      <p class="cookies-section-text">We may collect and process the following categories of data:</p>
+      <p class="cookies-section-text">Information you give us</p>
+      <ul>
+        <li>Full name</li>
+        <li>EMail address</li>
+        <li>Telephone numbers</li>
+        <li>Payment details</li>
+        <li>Business address</li>
+        <li>Job title</li>
+      </ul>
+      <p class="cookies-section-text"></p>
+      <p class="cookies-section-text"></p>
+      <p class="cookies-section-text"></p>
+      <p class="cookies-section-text"></p>
+    </div>
+    <h4 class="cookies-section-title"></h4>
+      
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="close()">Close</button>
+  </div>
+</clr-modal>

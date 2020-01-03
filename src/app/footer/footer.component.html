@@ -1,0 +1,30 @@
+<div class="footer-container">
+  <div class="footer-components">
+    <div class="about-container footer-component">
+      <p class="about-title footer-text">ABOUT</p>
+      <p class="about-text footer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo recusandae ea reprehenderit tenetur at ut voluptate nulla eos, consequatur cupiditate maxime asperiores rem! Quas nostrum porro, id pariatur quasi eos.</p>
+    </div>
+    <div class="social-container footer-component">
+      <p class="about-title footer-text">SOCIAL</p>
+      <a class="social-link" href="https://www.linkedin.com/in/renae-bendixsen-b2279a75/">
+        <img src="assets/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="legal-container footer-component">
+      <p class="about-title footer-text">LEGAL</p>
+      <ul>
+        <li><a class="legal-link footer-text" (click)="showTermsOfServiceModal()">Terms of Service</a></li>
+        <li><a class="legal-link footer-text" (click)="showCookiesPolicyModal()">Cookie Policy</a></li>
+        <li><a class="legal-link footer-text" (click)="showPrivacyPolicyModal()">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright-container">
+    <p class="footer-text">&#169; 2020 {{ companyName }}</p>
+  </div>
+</div>
+
+
+<app-cookies></app-cookies>
+<app-privacy></app-privacy>
+<app-terms-of-service></app-terms-of-service>

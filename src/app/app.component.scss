@@ -13,14 +13,12 @@
 }
 
 .title-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-bottom: 200px;
   height: 100vh;
 }
 
 .title {
-//  background-color: #4a4c5f;
+  margin-top: 200px;
+  padding-top: 100px;
   font-size: 48px;  
   text-align: center;
   color: $col_primary_light;
@@ -35,8 +33,12 @@
   background-color: $col_primary_dark;
 }
 
+.custom-outline-button {
+  border-color: $col_primary_dark;
+  color: $col_primary_dark;
+}
+
 .subtitle {
-//  background-color: #4a4c5f;
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
@@ -49,8 +51,8 @@
 .services-container {
   background-color: #ffffff;
   padding-top: 50px;
-  height: 500px;
-  // overflow-x: scroll;
+  height: 100vh;
+//  height: 500px;
   white-space: nowrap;
   text-align: center;
 }
@@ -72,3 +74,13 @@
   color: #fff;
   padding: 20px;
 }
+
+.additional-container {
+  background-color: $col_primary_light;
+  height: 100vh;
+}
+
+// .add-input {
+//   width: 400px;
+
+// }
