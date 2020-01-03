@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ClarityModule } from '@clr/angular';
+// import { ClarityModule } from '@clr/angular';
 
 import { NgxsModule } from '@ngxs/store';
 // import { NgxsRouterPluginModule } from '@ngxs/router-plugin';
@@ -46,7 +46,7 @@ export const storageKeys = [
   imports: [
     BrowserModule,
 //    AppRoutingModule,
-    ClarityModule,
+//    ClarityModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     NgxsModule.forRoot(states, { developmentMode: !environment.production }),
