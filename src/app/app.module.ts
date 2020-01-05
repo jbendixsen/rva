@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ClarityModule } from '@clr/angular';
 
@@ -23,6 +24,11 @@ import { TermsOfServiceComponent } from './modals/terms-of-service/terms-of-serv
 import { CookiesComponent } from './modals/cookies/cookies.component';
 import { PrivacyComponent } from './modals/privacy/privacy.component';
 
+import { RVAService } from './shared/services';
+import { AppInfoComponent } from './alerts/app-info/app-info.component';
+import { AppErrorComponent } from './alerts/app-error/app-error.component';
+import { AppWarnComponent } from './alerts/app-warn/app-warn.component';
+
 
 export const states = [
   AppState,
@@ -41,7 +47,10 @@ export const storageKeys = [
     RequestConsultationComponent,
     TermsOfServiceComponent,
     PrivacyComponent,
-    CookiesComponent
+    CookiesComponent,
+    AppInfoComponent,
+    AppErrorComponent,
+    AppWarnComponent
   ],
   imports: [
     BrowserModule,
@@ -49,13 +58,14 @@ export const storageKeys = [
     ClarityModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgxsModule.forRoot(states, { developmentMode: !environment.production }),
 //    NgxsStoragePluginModule.forRoot({ key: storageKeys}),
     NgxsReduxDevtoolsPluginModule.forRoot({ name: 'RVA'}),
     NgxsLoggerPluginModule.forRoot({ collapsed: false }),
 
   ],
-  providers: [],
+  providers: [ RVAService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,9 @@
 @import "../colors";
 
+.alert-container {
+  display: none;
+}
+
 .custom-header {
   background-color: transparent;
 }
@@ -14,6 +18,10 @@
 
 .title-container {
   height: 100vh;
+  background-image: url('/assets/bg2-hd-1.jpg');
+  background-repeat: no-repeat;
+  background-position: 75% 0;
+  background-attachment: fixed;
 }
 
 .title {
