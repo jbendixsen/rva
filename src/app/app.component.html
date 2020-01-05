@@ -30,24 +30,40 @@
       (click)="showRequestForm()">Request a Consultation</button>
     </div>
 </div>
-<div class="services-container">
-  <div class="service-container">
-    <h2 class="service-title">Adminstration Services</h2>
-    <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, iusto, architecto possimus impedit laboriosam est tempora consectetur rem quia omnis tempore aliquam blanditiis magni expedita? Libero fugiat molestiae molestias tenetur.</p>
+<div class="services-container clr-row">
+  <div class="service-container clr-col">
+    <app-service 
+      [title]="'Adminstration Services'" 
+      [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+      [image]="'admin-assistant.jpg'">
+    </app-service>
   </div>
-  <div class="service-container">
-    <h2 class="service-title">Customer Service</h2>
-    <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis alias fugit eum impedit corrupti dolorem sapiente dolore quisquam, magnam tempore deserunt nihil. Nostrum modi repellat maxime voluptatum atque saepe!</p>
+  <div class="service-container clr-col">
+    <app-service 
+      [title]="'Customer Service'" 
+      [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+      [image]="'project-management.jpg'">
+    </app-service>
   </div>
-  <div class="service-container">
-    <h2 class="service-title">Research Services</h2>
-    <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptate! Harum asperiores similique fuga dolores aut iure, earum fugiat quia corporis beatae quaerat temporibus libero exercitationem voluptatem eos hic vel.</p>
+  <div class="service-container clr-col">
+    <app-service 
+      [title]="'Research Services'" 
+      [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+      [image]="'research-services.jpg'">
+    </app-service>
+  </div>
+  <div class="service-container clr-col">
+    <app-service 
+      [title]="'Project Management'" 
+      [text]="'Lorem ipsum dolor sit amet consectetur adipisicing elit.'"
+      [image]="'customer-service.jpg'">
+    </app-service>
   </div>
 </div>
 
-<div class="additional-container">
+<!-- <div class="additional-container">
 
-</div>
+</div> -->
 
 <app-footer></app-footer> 
 

@@ -28,6 +28,7 @@ import { RVAService } from './shared/services';
 import { AppInfoComponent } from './alerts/app-info/app-info.component';
 import { AppErrorComponent } from './alerts/app-error/app-error.component';
 import { AppWarnComponent } from './alerts/app-warn/app-warn.component';
+import { ServiceComponent } from './components/service/service.component';
 
 
 export const states = [
@@ -50,7 +51,8 @@ export const storageKeys = [
     CookiesComponent,
     AppInfoComponent,
     AppErrorComponent,
-    AppWarnComponent
+    AppWarnComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

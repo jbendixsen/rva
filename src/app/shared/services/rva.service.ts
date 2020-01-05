@@ -13,7 +13,9 @@ export class RVAService {
   constructor(private http: HttpClient) {}
 
   public sendEMail(request: EMail): Observable<EMail> {
-    const url = 'https://kppd65vakc.execute-api.us-west-2.amazonaws.com/dev/email';
+    // const url = 'https://kppd65vakc.execute-api.us-west-2.amazonaws.com/dev/email';
+    const url = 'https://kppd65vakc.execute-api.us-west-2.amazonaws.com/prod/email';
+
     return this.http.post<EMail>(url, JSON.stringify(request), {}).pipe(
       delay(environment.simulatedLatency),
       catchError(this.handleError));

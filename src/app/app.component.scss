@@ -58,24 +58,27 @@
 
 .services-container {
   background-color: #ffffff;
-  padding-top: 50px;
+  // padding-top: 50px;
   height: 100vh;
 //  height: 500px;
   white-space: nowrap;
   text-align: center;
+  padding-top: 20px;
 }
 
 .service-container {
   background-color: $col_primary_dark;
   display: inline-block;
-  width: 28%;
+  width: 25%;
+  height: 90%;
   white-space: normal;
-  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  // margin: 5px;
 }
 
 .service-title {
   color: rgb(216, 216, 216);
-
 }
 
 .service-text {
