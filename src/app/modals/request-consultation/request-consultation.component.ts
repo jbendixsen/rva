@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 
 import { Select, Store } from '@ngxs/store';
-import { ModalState, HideRequestConsultationModal } from '../../shared/state';
+import { ModalState, HideRequestConsultationModal, SendEMail } from '../../shared/state';
 
 @Component({
   selector: 'app-request-consultation',
@@ -17,6 +17,7 @@ export class RequestConsultationComponent implements OnInit {
 
   requestConsultation = new FormGroup({
     name: new FormControl('', Validators.required),
+    phone: new FormControl(''),
     email: new FormControl('', Validators.required),
     notes: new FormControl(''),
   });
@@ -27,10 +28,18 @@ export class RequestConsultationComponent implements OnInit {
 
   cancelRequestForm() {
     this.store.dispatch(new HideRequestConsultationModal());
+    this.requestConsultation.reset();
   }
 
   submitRequest() {
+    this.store.dispatch(new SendEMail({
+      name: this.requestConsultation.value.name,
+      phone: this.requestConsultation.value.phone,
+      email: this.requestConsultation.value.email,
+      desc: this.requestConsultation.value.notes
+    }));
     this.store.dispatch(new HideRequestConsultationModal());
+    this.requestConsultation.reset();
   }
 
 }
